@@ -1,26 +1,54 @@
 <!doctype html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Pauls Algo Fun</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-</head>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Pauls Algo Fun</title>
+
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/custom.min.css">
+
+
+    </head>
     <body>
-        <table class="table">
-            <tr>
-                <th>First</th>
-                <th>Second</th>
-            </tr>
-            <tr>
-                <td>Bootstrap</td>
-                <td>For the win</td>
-            </tr>
-        </table>
-        <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+        <?php include('layout/navigation.html'); ?>
+
+        <div class="container">
+            <div class="page-header" id="banner">
+                <br />
+                <div class="row">
+                    <div class="col-lg-8 col-md-7 col-sm-6">
+                        <h1>Algorithm Madness</h1>
+                        <p class="lead">A place to test and showcase my work learning algorithms</p>
+                    </div>
+                    <div class="col-lg-4 col-md-5 col-sm-6">
+                        <div class="sponsor">
+s
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <?php
+                include('functions/application.php');
+
+                if (isset($_GET['show']) && !empty($_GET['show'])) {
+                    $show = $_GET['show'];
+
+                    switch ($show) {
+                        case 'quick-sort':
+                            include('algorithms/quick-sort.php');
+                            cave_man_debugger('including file');
+                        break;
+
+                    }
+                }
+            ?>
+        </div>
+
+        <script src="js/jquery.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/custom.js"></script>
     </body>
 </html>
