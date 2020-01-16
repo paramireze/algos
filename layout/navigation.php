@@ -11,9 +11,9 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="" id="download">Alorithms <span class="caret"></span></a>
                     <div class="dropdown-menu" aria-labelledby="download">
-                        <a class="dropdown-item" target="_blank" href="#">Quick Sort</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="" download>Example</a>
+                        <a class="dropdown-item" href="<?php echo root_http_path() ?>/index.php?show=quick-sort">Quick Sort</a>
+
+
                     </div>
                 </li>
                 <li class="nav-item">

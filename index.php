@@ -8,15 +8,15 @@
 
         <link rel="stylesheet" href="css/bootstrap.css">
         <link rel="stylesheet" href="css/custom.min.css">
-
+        <?php include('functions/application.php'); ?>
 
     </head>
     <body>
-        <?php include('layout/navigation.html'); ?>
+        <?php include('layout/navigation.php'); ?>
 
         <div class="container">
             <div class="page-header" id="banner">
-                <br />
+
                 <div class="row">
                     <div class="col-lg-8 col-md-7 col-sm-6">
                         <h1>Algorithm Madness</h1>
@@ -24,13 +24,12 @@
                     </div>
                     <div class="col-lg-4 col-md-5 col-sm-6">
                         <div class="sponsor">
-s
+
                         </div>
                     </div>
                 </div>
             </div>
             <?php
-                include('functions/application.php');
 
                 if (isset($_GET['show']) && !empty($_GET['show'])) {
                     $show = $_GET['show'];
@@ -38,7 +37,6 @@ s
                     switch ($show) {
                         case 'quick-sort':
                             include('algorithms/quick-sort.php');
-                            cave_man_debugger('including file');
                         break;
 
                     }
