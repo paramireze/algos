@@ -9,7 +9,7 @@
 
 
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="" id="download">Alorithms <span class="caret"></span></a>
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="" id="download">Algorithms <span class="caret"></span></a>
                     <div class="dropdown-menu" aria-labelledby="download">
                         <a class="dropdown-item" href="<?php echo root_http_path() ?>/index.php?show=quick-sort">Quick Sort</a>
 
