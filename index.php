@@ -23,8 +23,13 @@
 
             switch ($_GET['show']) {
                 case 'quick-sort':
-                    $page_title = 'Algorithm Madness';
+                    $page_title = 'Quick Sorting';
                     $file_path = 'algorithms/quick-sort.php';
+                    break;
+
+                case 'binary-search':
+                    $page_title = 'Binary Search';
+                    $file_path = 'algorithms/binary-search.php';
                     break;
 
                 default:
