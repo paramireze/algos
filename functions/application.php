@@ -1,6 +1,10 @@
 <?php
-// a place for functions used in more than one area of the website
 
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
+// global functions
 function cave_man_debugger($message) {
     error_log(print_r($message, 1));
 }
