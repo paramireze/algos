@@ -7,9 +7,10 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav">
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="" id="download">Algorithms <span class="caret"></span></a>
-                    <div class="dropdown-menu" aria-labelledby="download">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="" id="algorithms">Algorithms <span class="caret"></span></a>
+                    <div class="dropdown-menu" aria-labelledby="algorithms">
                         <a class="dropdown-item" href="<?php echo root_http_path(); ?>/index.php?show=quick-sort">Quick Sort</a>
+                        <a class="dropdown-item" href="<?php echo root_http_path(); ?>/index.php?show=binary-search">Binary Search</a>
                     </div>
                 </li>
             </ul>

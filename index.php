@@ -17,18 +17,27 @@
         include 'layout/navigation.php';
 
         $page_title = 'Welcome';
+        $page_description = "This site is for fun. This is where I am currently posting the things that interest me most. Don't judge me";
         $file_path = 'site/introduction.php';
 
         if (!empty($_GET['show'])) {
 
             switch ($_GET['show']) {
                 case 'quick-sort':
-                    $page_title = 'Algorithm Madness';
+                    $page_title = 'Quick Sorting';
+                    $page_description = "A divide and conquer sorting technique using a pivot to position values";
                     $file_path = 'algorithms/quick-sort.php';
+                    break;
+
+                case 'binary-search':
+                    $page_title = 'Binary Search';
+                    $page_description = "A way to search a sorted list by halving the reasonable guesses";
+                    $file_path = 'algorithms/binary-search.php';
                     break;
 
                 default:
                     $page_title = 'Huh?';
+                    $page_description = "oooopppsss";
                     $file_path = 'layout/not-found.php';
             }
         }
@@ -38,12 +47,13 @@
             <div class="page-header" id="banner">
 
                 <div class="row">
-                    <div class="col-lg-8 col-md-7 col-sm-6">
+                    <div class="col-lg-9 col-md-8 col-sm-7">
                         <h1><?php echo $page_title ?></h1>
+                        <p><?php echo $page_description; ?></p>
                     </div>
-                    <div class="col-lg-4 col-md-5 col-sm-6">
+                    <div class="col-lg-3 col-md-4 col-sm-5">
                         <div class="sponsor">
-
+                            <a href="https://github.com/paramireze/algos"><img src="images/Octocat.jpg"></a>
                         </div>
                     </div>
                 </div>
