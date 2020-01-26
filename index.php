@@ -29,6 +29,14 @@
                     $page_description = 'Starting from the left position, determine the value for each position by iterating over each item in the array';
                     $file_path = 'algorithms/selection-sort.php';
                     break;
+
+                case 'insert-sort':
+
+                    $page_title = 'Insert Sort';
+                    $page_description = 'Sort by iterating over each item and comparing it to the values to the left of it, swapping until in correct ascending order position';
+                    $file_path = 'algorithms/insert-sort.php';
+                    break;
+
                 case 'quick-sort':
                     $page_title = 'Quick Sorting';
                     $page_description = "A divide and conquer sorting technique using a pivot to position values";
@@ -40,6 +48,7 @@
                     $page_description = "A way to search a sorted list by halving the reasonable guesses";
                     $file_path = 'algorithms/binary-search.php';
                     break;
+
 
                 default:
                     $page_title = 'Huh?';
