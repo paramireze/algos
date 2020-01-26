@@ -23,6 +23,12 @@
         if (!empty($_GET['show'])) {
 
             switch ($_GET['show']) {
+                case 'selection-sort':
+
+                    $page_title = 'Selection Sort';
+                    $page_description = 'Starting from the left position, determine the value for each position by iterating over each item in the array';
+                    $file_path = 'algorithms/selection-sort.php';
+                    break;
                 case 'quick-sort':
                     $page_title = 'Quick Sorting';
                     $page_description = "A divide and conquer sorting technique using a pivot to position values";
