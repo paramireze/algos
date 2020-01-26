@@ -6,15 +6,6 @@ function do_nothing() {
     cave_man_debugger("I am doing nothing because that is what I do.");
 }
 
-function swap( $indexOne, $indexTwo) {
-    global $array;
-
-    $temp = $array[$indexOne];
-    $array[$indexOne] = $array[$indexTwo];
-    $array[$indexTwo] = $temp;
-    return;
-}
-
 function is_group_boundary($j, $q) {
     return $j == $q;
 }
